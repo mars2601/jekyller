@@ -10,10 +10,15 @@ requirejs(['jquery', 'notify.min'], function ($, notify) {
     console.log("Let's work with our dependecies");
 
     var x,
-        wh = window.height(),
-        ww = window.width();
+        wh = $(window).height(),
+        ww = $(window).width();
 
-        console.log(wh)
 
-    $(".head-fold").height(wh);
+    set_height($(".head-fold"), wh, 800);
+
+    function set_height(element, height, max_height){
+        h = ( height > max_height ) ? max_height : height;
+        element.height(h);
+    }
+
 });
