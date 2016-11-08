@@ -20,14 +20,14 @@ feed:
   en: /feed.xml
   fr: /flux.xml
 buttons:
-    projects:
-        en: See all our projects
-        fr: Voir nos projets
+    documentation:
+        en: See the full documentation
+        fr: Voir la documentation
     contact:
         en: Contact us
         fr: Nous contacter
     trial:
-        en: get the free trial
+        en: Get the free trial
         fr: Utilisez la demo gratuite
 scroll:
     en: Scroll for more

@@ -7,13 +7,35 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         &--text{
-            max-width: 50%;
+            width: 42%;
+            color: white;
         }
+        &__title{
+            font-size: 3.25em;
+            font-weight: bold;
+            text-shadow: 1px 0 0 transparentize($color-dark, 0.65);
+        }
+        &__sub-title{
+            font-size: 1.375em;
+            line-height: 1.75em;
+            font-style: italic;
+            letter-spacing: .25px;
+            margin-top: 30px;
+        }
+        .btn-wrap{
+            margin-top: 70px;
+            display: block;
+        }
+
     }
     &__footer{
         height: 84px;
         line-height: 84px;
     }
+}
+
+.head-fold{
+    @include linear-gradient-b(-45deg, darken($color-dark-xx, 15%), darken($color-dark, 1%));
 }

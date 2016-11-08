@@ -41,12 +41,18 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
+$color-light: 		#FFF;
+$color-1: 			#F9EE7A;
+$color-2:			#79C6A1;
+$color-dark: 		#115F66;
+$color-dark-xx: 	#04272B;
+
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1180px;
+$content-width:    1240px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
