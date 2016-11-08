@@ -1,6 +1,5 @@
 ---
-layout: post
-title:  NODEUM is our scalable.
+title:  NODEUM is our scalable, hybrid storage and active archival system that offers optimal, secure and long-term management of data.
 ref: dem1
 icon: icon.svg
 lang: fr
