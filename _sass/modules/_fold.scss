@@ -1,0 +1,19 @@
+.fold{
+    height: 100%;
+    > .wrapper{
+        height: 100%;
+    }
+    &__content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--text{
+            max-width: 50%;
+        }
+    }
+    &__footer{
+        height: 84px;
+        line-height: 84px;
+    }
+}
