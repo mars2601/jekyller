@@ -1,12 +1,14 @@
-// jQuery(document).ready(function($) {
-//
-//
-// }); /* end of as page load scripts */
+
 
 requirejs.config({
     baseUrl: 'js/lib',
+    paths: {
+        jquery: 'jquery-3.1.1.min'
+    }
 });
 
-requirejs(['jquery-3.1.1.min', 'notify.min'], function ($, notify) {
+requirejs(['jquery', 'notify.min'], function ($, notify) {
     console.log("Let's work with our dependecies");
+    console.log($("body"));
+    $.notify("Hello World");
 });
