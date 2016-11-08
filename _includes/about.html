@@ -2,7 +2,7 @@
     {% assign posts=site.posts | where:"lang", page.lang, | where:"categories", "demo" %}
         {% for post in posts %}
             <article class="m-all d-1of2 demonstration">
-                <span class="demonstration__icon icon"><img src="{{ post.icon }}" alt=""></span>
+                <span class="demonstration__icon icon"></span>
                 <h1 class="demonstration__title">{{ post.title }}</h1>
                 <p>{{ post.content }}</p>
             </article>
