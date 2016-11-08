@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Bienvenue sur Jekyll !"
-ref: welcome
-date:   2016-02-29 09:48:44 +0100
-categories: jekyll update
+title:  NODEUM is our scalable.
+ref: dem1
+icon: icon.svg
 lang: fr
+categories: demo
 ---
+
 Cet article se situe dans le dossier `_posts`. Allez l'éditer, et générez votre site à nouveau pour voir les modifications. Vous pouvez générer le site de différentes façons, mais le plus efficace est de lancer la commande `jekyll serve`, qui crée un serveur web et génère automatiquement votre site à chaque fois qu'un fichier est modifié.
 
 Pour ajouter un autre article, créez un nouveau fichier dans le dossier `_posts` dont le nom contient la date de la façon suivante : `AAAA-MM-JJ-nom-de-l-article.ext` et placez-y l'entête.  includes the necessary front matter. Regardez le code source de cet article pour avoir une bonne idée de la façon dont cela fonctionne.

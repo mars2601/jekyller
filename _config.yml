@@ -15,14 +15,28 @@ description:
   fr: Écrivez une super description de votre nouveau site ici. Vous pouvez modifier cette ligne dans _config.yml. Elle apparaîtra dans la balise meta description (pour les résultats sur Google) et dans le fil RSS feed.xml.
 index:
   en:
-  fr: accueil.html
+  fr: /pages/accueil.html
 feed:
   en: /feed.xml
   fr: /flux.xml
+buttons:
+    projects:
+        en: See all our projects
+        fr: Voir nos projets
+    contact:
+        en: Contact us
+        fr: Nous contacter
+    trial:
+        en: get the free trial
+        fr: Utilisez la demo gratuite
+scroll:
+    en: Scroll for more
+    fr: Veuillez scroller
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+future: true
 
 # Build settings
 markdown: kramdown
