@@ -9,5 +9,11 @@ requirejs.config({
 requirejs(['jquery', 'notify.min'], function ($, notify) {
     console.log("Let's work with our dependecies");
 
-    $(".fold-head").height(window.height());
+    var x,
+        wh = window.height(),
+        ww = window.width();
+
+        console.log(wh)
+
+    $(".head-fold").height(wh);
 });
