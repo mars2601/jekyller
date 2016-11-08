@@ -16,7 +16,7 @@ requirejs(['jquery', 'notify.min'], function ($, notify) {
         fold_footer_h = $(".fold__footer").height();
 
 
-    set_height($(".head-fold"), wh, 800);
+    set_height($(".head-fold"), wh, 900);
     set_height($(".fold"), ($(".head-fold").height() - header_h - fold_footer_h), 10000);
 
     function set_height(element, height, max_height){

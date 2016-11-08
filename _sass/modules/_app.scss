@@ -1,0 +1,50 @@
+.app{
+    float: right;
+    width: 650px;
+    height: 375px;
+    background-color: #1a626f;
+    border-radius: 25px;
+    box-shadow: inset 4px 6px 12px 1px transparentize($color-light, 0.92),inset -4px -6px 12px transparentize($color-dark-xx, 0.40),0 2px 6px transparentize(#000, 0.4),7px 20px 45px transparentize(#000, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__window{
+        height: 335px;
+        width: 555px;
+        background: transparent;
+        border: 1px solid transparentize($color-dark-xx, 0.60);
+        border-radius: 4px;
+        padding: 5px;
+        .menu{
+            width: 35%;
+            margin-left: 0;
+            float: left;
+            &__item{
+                list-style-type: none;
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                border: 2px solid #276a77;
+                color: #276a77;
+                padding-left: 17px;
+                border-radius: 3px;
+                &.active{
+                    background: #276a77;
+                    color: transparentize($color-light, .25);
+                    width: 110%;
+                }
+                &+.menu__item{
+                    margin-top: 12px;
+                }
+            }
+        }
+        .active-page{
+            width: 63%;
+            float: right;
+            height: 100%;
+            background: #276a77;
+            display: block;
+            border-radius: 0 3px 3px 3px;
+        }
+    }
+}
