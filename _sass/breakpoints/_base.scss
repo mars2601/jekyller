@@ -25,6 +25,19 @@ LAYOUT & GRID STYLES
 	margin: 0 auto;
 }
 
+.t-align{
+	&-l{ text-align: left; }
+	&-r{ text-align: right; }
+	&-c{ text-align: center; }
+}
+
+.w{
+	&-100{
+		display: block;
+		width: 100%;
+	}
+}
+
 /*********************
 LINK STYLES
 *********************/

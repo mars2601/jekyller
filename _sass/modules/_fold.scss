@@ -29,7 +29,7 @@
             margin-top: 30px;
         }
         .btn-wrap{
-            margin-top: 70px;
+            margin-top: 80px;
             display: block;
         }
 
@@ -37,6 +37,14 @@
     &__footer{
         height: 84px;
         line-height: 84px;
+        background: transparentize(darken($color-dark-xx, 5%), .2);
+        color: $color-light;
+        text-transform: uppercase;
+        font-size: .75em;
+        letter-spacing: 0.2em;
+        .icon{
+            margin-right: 15px;
+        }
     }
 }
 

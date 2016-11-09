@@ -1,0 +1,12 @@
+.icon{
+    $w: 22px;
+    width: $w;
+    height: $w;
+    line-height: $w;
+    position: relative;
+    top: $w/4;
+    >svg{
+        width: $w;
+        height: $w;
+    }
+}
