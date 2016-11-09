@@ -1,0 +1,20 @@
+<section class="features">
+    <div class="wrapper">
+        <div class="d-1of2">
+            <h1 class="features__title title-2">We provide you an efficient package wich include several features.</h1>
+        </div>
+        {% assign features=site.features | where:"lang", page.lang %}
+            {% for feature in features %}
+                <article class="feature m-all t-1of2 d-1of4">
+                    <div class="feature--wrapper">
+                        {% capture icon %}{{ 'img/icons/icon-' }}{{ feature.icon }}{{ '.svg' }}{% endcapture %}
+                        <span class="feature__icon icon-xx">{% include {{icon}} param="value" %}</span>
+                        <div class="feature__content">
+                            <h1 class="feature__title title-2">{{ feature.title }}</h1>
+                            {{ feature.content }}
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+    </div>
+</section>

@@ -49,5 +49,5 @@
 }
 
 .head-fold{
-    @include linear-gradient-b(-45deg, darken($color-dark-xx, 15%), darken($color-dark, 1%));
+    @include linear-gradient-b(-45deg, darken($color-dark-xx, 5%), darken($color-dark, 1%));
 }

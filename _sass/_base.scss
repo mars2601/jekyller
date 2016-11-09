@@ -37,6 +37,19 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+.title{
+    &-1{
+        font-size: 1.625em;
+    }
+    &-2{
+        font-size: 1.125em;
+        text-transform: uppercase;
+    }
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /**

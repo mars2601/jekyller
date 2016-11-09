@@ -40,3 +40,8 @@ future: true
 
 # Build settings
 markdown: kramdown
+
+collections:
+  features:
+    output: true
+    permalink: /features/:path/
