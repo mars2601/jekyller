@@ -1,0 +1,67 @@
+.newsletter{
+    padding-bottom: $gap-block;
+    &__wrapper{
+        max-width: 580px;
+        margin: 0 auto;
+        font-family: 'Aller';
+    }
+    &__form{
+        border: 3px solid $color-2;
+        height: 58px;
+        line-height: 58px;
+        border-radius: 32px;
+        padding: 0 0 0 25px;
+        &--input, &--button{
+            font-size: 1em;
+            font-weight: bold;
+
+        }
+        &--input{
+            letter-spacing: .25px;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            color: $color-2;
+            width: 200px;
+            &:focus{
+                color: $color-light;
+                outline: none;
+            }
+
+        }
+        &--button{
+            border: 2px solid $color-1;
+            background: $color-1;
+            height: 52px;
+            line-height: 49px;
+            margin: 3px;
+            display: inline-block;
+            border-radius: 28px;
+            padding: 0 20px;
+            text-transform: uppercase;
+            color: $color-dark-xx;
+            float: right;
+            width: 330px;
+            text-align: center;
+            &:hover{
+
+            }
+        }
+
+    }
+    ::-webkit-input-placeholder {
+       color: $color-2; font-style: italic;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: $color-2; font-style: italic;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: $color-2; font-style: italic;
+    }
+
+    :-ms-input-placeholder {
+       color: $color-2; font-style: italic;
+    }
+}

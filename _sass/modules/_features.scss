@@ -1,9 +1,16 @@
 .features{
     background-color: $color-dark-xx;
     color: $color-light;
+    padding: 0 0 $gap-block 0;
+    &__title{
+        line-height: 1.35em;
+        &-wrapper{
+            padding: $gap-block 10% 0 20px;
+        }
+    }
     .feature{
         padding: 15px 20px;
-        &:nth-child(6n){
+        &:nth-child(7n){
             margin-right: 25%;
             &+.feature{
                 margin-left: 25%;

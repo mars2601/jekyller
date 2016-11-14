@@ -1,15 +1,20 @@
 .about{
     background-image: url('../img/image-about.png');
+    background-repeat: no-repeat;
     background-color: $color-dark-xx;
-    background-size: cover;
-    padding-bottom: 80px;
+    background-image: 100% auto;
+    padding-bottom: $gap-block;
 }
 
 .demonstration{
-    padding-right: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-top: 90px;
     &:nth-child(3n){
         width: 100%;
+    }
+    &:nth-child(2n){
+        @extend .last-col;
     }
     &:nth-child(3n) .demonstration__content{
         -webkit-column-count: 2; /* Chrome, Safari, Opera */

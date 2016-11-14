@@ -1,7 +1,15 @@
 <section class="features">
     <div class="wrapper">
-        <div class="d-1of2">
-            <h1 class="features__title title-2">We provide you an efficient package wich include several features.</h1>
+        <div class="d-all newsletter">
+            <div class="newsletter__wrapper">
+                <form action="" class="newsletter__form">
+                    <input class="newsletter__form--input" type="text" name="email" value="" placeholder="Type your email adress">
+                    <input class="newsletter__form--button" type="button" name="send" value="Suscribe to our newsletter">
+                </form>
+            </div>
+        </div>
+        <div class="d-1of2 features__title-wrapper">
+            <h1 class="features__title title-1">We provide you an efficient package wich include several features.</h1>
         </div>
         {% assign features=site.features | where:"lang", page.lang %}
             {% for feature in features %}
