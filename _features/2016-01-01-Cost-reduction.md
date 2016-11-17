@@ -2,7 +2,7 @@
 layout: post
 title:  Cost reduction
 ref: cost-reduction
-icon: cost
+icon: cost-reduction2
 lang: en
 ---
 

@@ -15,7 +15,7 @@
             {% for feature in features %}
                 <article class="feature m-all t-1of2 d-1of4">
                     <div class="feature--wrapper">
-                        {% capture icon %}{{ 'img/icons/icon-' }}{{ feature.icon }}{{ '.svg' }}{% endcapture %}
+                        {% capture icon %}{{ 'img/icons/light/icon-' }}{{ feature.icon }}{{ '.svg' }}{% endcapture %}
                         <span class="feature__icon icon-xx">{% include {{icon}} param="value" %}</span>
                         <div class="feature__content">
                             <h1 class="feature__title title-2">{{ feature.title }}</h1>

@@ -43,8 +43,13 @@
             float: right;
             width: 330px;
             text-align: center;
+            text-shadow: 1px 1px 0 transparentize($color-light, 0.35);
+            transition: all .2s ease;
             &:hover{
-
+                background: $color-light;
+                border: 2px solid $color-light;
+                color: $color-dark-xx;
+                cursor: pointer;
             }
         }
 

@@ -21,19 +21,58 @@ a.btn{
     display: inline-block;
     box-shadow: 0 0 20px transparentize($color-light, 0.55);
     text-shadow: 1px 1px 0 transparentize($color-dark-xx, 0.35);
+    text-transform: uppercase;
+    transition: all .2s ease;
+    position: relative;
+    span.btn__icon{
+        opacity: 0;
+        width: 0;
+        // top: 10px;
+        position: absolute;
+        transition: all .2s ease;
+        &  > svg{
+            width: 26px;
+            position: relative;
+            left: -15px;
+            transition: all .2s ease;
+        }
+    }
     &-highlight-1{
         color: $color-dark-xx;
         background: $color-1;
         box-shadow: 0 0 20px transparentize($color-1, 0.55);
         text-shadow: 1px 1px 0 transparentize($color-light, 0.35);
+        span.btn__icon{
+            &  > svg{
+                -webkit-filter: drop-shadow( 0 1px 0 transparentize($color-light, 0.35) );
+                filter: drop-shadow( 0 1px 0 transparentize($color-light, 0.35) ); /* Same syntax as box-shadow */
+            }
+        }
     }
     &-highlight-2{
         color: $color-light;
         background: $color-2;
         box-shadow: 0 0 20px transparentize($color-2, 0.55);
         text-shadow: 1px 1px 0 transparentize($color-dark-xx, 0.35);
+        span.btn__icon{
+            &  > svg{
+                -webkit-filter: drop-shadow( 0 1px 0 transparentize($color-dark-xx, 0.35) );
+                filter: drop-shadow( 0 1px 0 transparentize($color-dark-xx, 0.35) ); /* Same syntax as box-shadow */
+            }
+        }
     }
+
+    // HOOOVER
     &:hover{
         text-decoration: none;
+        padding-right: 56px;
+        span.btn__icon{
+            opacity: 1;
+            width: 26px;
+            & > svg{
+                position: relative;
+                left: 10px;
+            }
+        }
     }
 }

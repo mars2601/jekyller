@@ -19,7 +19,7 @@
 
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %} <a class="page-link page-link--lang {{ post.lang }}" href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %} -->
-        <a class="btn btn-highlight-1" href="">{{ site.buttons.trial[page.lang] }}</a>
+        <a class="btn btn-highlight-1" href="">{{ site.buttons.trial[page.lang] }}<span class="btn__icon icon-x">{% include img/icons/light/icon-arrow-dark.svg param="value" %}</span></a>
       </div>
     </nav>
 

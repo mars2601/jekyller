@@ -38,6 +38,9 @@
 
         &+.btn{
             margin-left: 210px;
+            &:hover{
+                margin-left: 210px - 18px;
+            }
         }
         &--lang{
             margin-right: 5px;
