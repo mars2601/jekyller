@@ -1,0 +1,12 @@
+.animation-element {
+    /*opacity: 0;*/
+}
+
+
+.animation-element.slide-left {
+    transform: matrix(1, 0, 0, 1, -100, 0);
+}
+
+.animation-element.slide-right {
+    transform: matrix(1, 0, 0, 1, 100, 0);
+}
